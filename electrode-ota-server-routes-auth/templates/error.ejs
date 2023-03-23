@@ -1,0 +1,7 @@
+<div className="error">
+    <% if (locals.href) { %>
+        <a href="<%- locals.href %>"><%-message || 'Sorry, an error occurred'%></a>
+    <% } else { %>
+        <%- message || 'Sorry, an error occurred' %>
+    <% } %>
+</div>
